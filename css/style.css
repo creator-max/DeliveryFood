@@ -1,0 +1,538 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.container {
+    padding-left: 3%;
+    padding-right: 3%;
+    max-width: 1440px;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    padding-bottom: 45px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: center;
+    justify-content: space-between;
+}
+
+input {
+    padding-left: 32px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+    background-repeat: no-repeat;
+}
+
+input::placeholder {
+    color: #BFBFBF;
+}
+
+.address-input {
+    flex: 0.8;
+    background-image: url("../img/home.png");
+    background-position: 1%;
+}
+
+.address-logo {
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+.user {
+    display: flex;
+}
+
+.login {
+    padding-left: 9%;
+    width: 96px;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+    background-color: dodgerblue;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 13%;
+}
+
+.basket {
+    margin-left: 4%;
+    width: 113px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    padding-left: 11%;
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 12%;
+    color: #595959;
+    font-size: 16px;
+}
+
+.promo {
+    padding: 68px 70px;
+    border-radius: 10px;
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background: #ffffc0 url("../img/pizza.png") no-repeat center right -50px;
+    background-size: 450px;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+
+}
+
+.promo h1 {
+    font-size: 39px;
+    line-height: 46px;
+}
+
+.promo p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.main-info {
+    color: #302C34;
+    max-width: 530px;
+}
+
+.restaurants-header {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.restaurants-header h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.search-input {
+    width: 306px;
+    background-image: url("../img/Vector.svg");
+    background-position: 3%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 31%;
+    max-height: 377px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card-img {
+    width: 384px;
+    height: 250px;
+}
+
+.card-text {
+    padding: 7% 5% 8% 5%;
+}
+
+.card-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card-time {
+    width: 55px;
+    height: 22px;
+    background: #262626;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0.5% 2%;
+}
+
+.card-info {
+    max-width: 227px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFC107;
+}
+
+.rating-img {
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+}
+
+.category-img {
+    margin-right: 15px;
+}
+
+footer {
+    margin-top: 73px;
+    padding-left: 30px;
+    max-width: 1230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-info {
+    flex: 0.8;
+}
+
+.footer-info button{
+    background-color: #fff;
+    border: none;
+    color: #595959;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 15px;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks button {
+    background-color: #fff;
+    border: none;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.instagram {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/insta.svg");
+}
+
+.facebook {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/facebook.svg");
+}
+
+.vkontakte {
+    width: 35px;
+    height: 25px;
+    background-image: url("../img/vk.svg");
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        padding: 5%;
+        background-size: 400px ;
+        background-position: center right -100px;
+    }
+
+    .main-info {
+        max-width: 480px;
+    }
+
+    .promo h1{
+        font-size: 34px;
+    }
+
+    .promo p {
+        font-size: 22px;
+    }
+
+    .card-header h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+    .promo {
+        background-size: 380px;
+        background-position: center right -110px;
+    }
+
+    .promo h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .promo p {
+        font-size: 20px;
+    }
+
+    .main-info {
+        max-width: 350px;
+    }
+
+    .restaurants-header h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        flex-basis: 44%;
+    }
+
+    .card-img {
+        width: 384px;
+        height: 250px;
+    }
+
+    .rating {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .category {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 1%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .address-input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    .promo {
+        -webkit-background-size: 350px;
+        background-size: 350px;
+        background-position: center right -150px;
+    }
+
+    .main-info {
+        max-width: 300px;
+    }
+
+    .main-info h1 {
+        font-size: 28px;
+    }
+
+    .main-info p {
+        font-size: 18px;
+    }
+
+    .restaurants-header h2 {
+        font-size: 28px;
+    }
+
+    .card-img {
+        width: 364px;
+        height: 220px;
+    }
+
+    .card {
+        width: 30px;
+        height: 360px;
+    }
+
+    .card-header h3 {
+        font-size: 18px;
+    }
+
+    .card-time {
+        max-width: 50px;
+        font-size: 12px;
+    }
+
+    .card-info {
+        flex-wrap: wrap;
+    }
+
+    .rating {
+        font-size: 14px;
+        flex-basis: 100%;
+    }
+
+    .category {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+
+    .footer-info {
+        order: -1;
+        margin-right: 0;
+    }
+
+    .footer-info button {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 578px) {
+    .promo {
+        max-height: 250px;
+        background-image: none;
+    }
+
+    .main-info {
+        max-width: 80%;
+    }
+
+    .restaurants-header {
+        flex-wrap: wrap;
+    }
+
+    .search-input {
+        margin-top: 8px;
+        flex-basis: 80%;
+        margin-bottom: 10px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 210px;
+    }
+
+    .card {
+        flex-basis: 80%;
+        height: 360px;
+    }
+
+    .card-time {
+        max-width: 80px;
+        font-size: 12px;
+    }
+
+    .card-info {
+        max-width: 100%;
+    }
+
+    .rating {
+        flex-basis: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header button {
+        max-width: 80px;
+        max-height: 35px;
+    }
+
+    .login, .basket {
+        background-image: none;
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    .promo {
+        max-height: 280px;
+    }
+
+    .promo h1{
+        line-height: 30px;
+        font-size: 26px;
+    }
+
+    .promo p{
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .restaurants-header h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        max-height: 280px;
+    }
+
+    .card-img {
+        height: 170px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: normal;
+    }
+
+    .footer-info {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+
+    .footer-info button {
+        font-size: 16px;
+    }
+
+    .footer-logo {
+        margin-right: 20px;
+    }
+
+}
+
