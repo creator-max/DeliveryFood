@@ -112,7 +112,6 @@ input::placeholder {
 .restaurants-header {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 5%;
 }
@@ -121,6 +120,7 @@ input::placeholder {
     margin: 0;
     font-size: 36px;
     line-height: 42px;
+    margin-right: 40px;
 }
 
 .search-input {
@@ -137,17 +137,18 @@ input::placeholder {
 
 .card {
     flex-basis: 31%;
-    max-height: 377px;
+    max-height: 387px;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 
 .card-img {
-    width: 384px;
-    height: 250px;
+    width: 415px;
+    height: 260px;
 }
 
 .card-text {
@@ -155,7 +156,7 @@ input::placeholder {
 }
 
 .card-header {
-
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -271,6 +272,63 @@ footer {
     background-image: url("../img/vk.svg");
 }
 
+.restaurant-info {
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card.dish {
+    max-height: 410px;
+}
+
+.dish-img {
+    width: 100%;
+    height: 210px;
+}
+
+.dish-header h3 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dish-info {
+    max-width: 100%;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+}
+
+.dish-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dish-basket {
+    padding-right: 25px;
+    margin-top: 25px;
+    margin-left: 0;
+    width: 125px;
+    padding-left: 0;
+    background-color: #1890FF;
+    color: #FFFFFF;
+    background-image: url("../img/basket-2.svg");
+    background-position: center right 13px;
+    margin-right: 30px;
+}
+
+.dish-price {
+    font-size: 20px;
+    line-height: 32px;
+}
+
 @media (max-width: 1200px) {
     .promo {
         padding: 5%;
@@ -292,6 +350,34 @@ footer {
 
     .card-header h3 {
         font-size: 22px;
+    }
+
+    .card.dish {
+        height: 500px;
+    }
+
+    .dish-header {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dish-info {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .dish-info p {
+        white-space: pre-wrap;
+        overflow: unset;
+        text-overflow: clip;
+    }
+
+    .dish-price {
+        font-size: 18px;
+    }
+
+    .dish-basket {
+        max-height: 35px;
     }
 }
 
@@ -337,6 +423,19 @@ footer {
 
     .category {
         font-size: 16px;
+    }
+
+    .card.dish {
+        max-height: 410px;
+    }
+
+    .dish-img {
+        max-height: 200px;
+    }
+
+    .dish-info {
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 }
 
@@ -432,6 +531,43 @@ footer {
         margin-bottom: 5px;
     }
 
+    .restaurant-info .rating {
+        flex-basis: 0;
+    }
+
+    .card.dish {
+        max-height: 370px;
+    }
+
+    .dish-img {
+        max-width: 100%;
+        max-height: 160px;
+    }
+
+    .dish-header {
+        margin-bottom: 0;
+    }
+
+    .dish-info {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .dish-info p {
+        font-size: 14px;
+    }
+
+    .dish-basket {
+        background-position: center right 8px;
+        font-size: 14px;
+        max-width: 100px;
+        max-height: 32px;
+        margin-right: 15px;
+    }
+
+    .dish-price {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 578px) {
@@ -461,7 +597,7 @@ footer {
 
     .card {
         flex-basis: 80%;
-        height: 360px;
+        max-height: 340px;
     }
 
     .card-time {
@@ -476,6 +612,25 @@ footer {
     .rating {
         flex-basis: 0;
     }
+
+    .restaurants-header {
+        flex-wrap: wrap;
+    }
+
+    .restaurants-header h2 {
+        flex-basis: 100%;
+    }
+
+    .card.dish {
+        flex-basis: 49%;
+        max-height: 340px;
+    }
+
+    .dish-img {
+        max-height: 140px;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -534,5 +689,12 @@ footer {
         margin-right: 20px;
     }
 
+    .card.dish {
+        flex-basis: 70%;
+    }
+
+    .dish-info p {
+        line-height: 19px;
+    }
 }
 
